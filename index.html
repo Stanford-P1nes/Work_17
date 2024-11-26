@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class='appdata'>
+            <div class="input-box">
+                <label for="input-lastname">Фамилия</label>
+                <input type="text" id='input-lastname' class='input-lastname-js' placeholder='Иванов' onfocus='this.placeholder=""' onblur='this.placeholder="Иванов"' autocomplete='off' tabindex='1' title='Фамилия'>
+            </div>
+            <div class="input-box">
+                <label for="input-username">Имя</label>
+                <input type="text" id='input-username' class='input-username-js' placeholder='Иван' onfocus='this.placeholder=""' onblur='this.placeholder="Иван"' autocomplete='off' tabindex='2' title='Имя'>
+            </div>
+            <div class="input-box">
+                <label for="input-age">Сколько лет?</label>
+                <input type="number" min='1' max='1000' id='input-age' class='input-age-js' placeholder='17' onfocus='this.placeholder=""' onblur='this.placeholder="17"' autocomplete='off' tabindex='3' title='Сколько лет?'>
+            </div>
+            <div class="button-box">
+                <button type='button' class='btn-add btn-add-js' tabindex='4'>Добавить</button>
+                <button type='button' class='btn-remove btn-remove-js active' tabindex='4'>Удалить</button>
+                <button type='button' class='btn-edit btn-edit-js active' tabindex='4'>Изменить</button>
+            </div>
+        </div>
+
+        <div class="viewport">
+            <div class="viewport-header">
+                <h1 class='title'>Пользователи</h1>
+            </div>
+            <div class="viewport-main">
+                <div class='designation-box'>
+                    <h2 class='heading'>Фамилия</h2>
+                    <h2 class='heading'>Имя</h2>
+                    <h2 class='heading'>Возраст</h2>
+                </div>
+
+                <div class="person-box">
+                    <div class="person">
+                        <p class='person-lastname'>Агаев</p>
+                        <p class='person-username'>Марат</p>
+                        <p class='person-age'>13</p>
+                    </div>
+                    <div class="person">
+                        <p class='person-lastname'>Агаев</p>
+                        <p class='person-username'>Ислам</p>
+                        <p class='person-age'>21</p>
+                    </div>
+                    <div class="person">
+                        <p class='person-lastname'>Агаев</p>
+                        <p class='person-username'>Рамазан</p>
+                        <p class='person-age'>18</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src='./index.js'></script>
+</body>
+</html>
